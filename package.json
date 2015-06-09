@@ -1,0 +1,12 @@
+{
+  "name": "jfalcon",
+  "version": "1.0.0",
+  "description": "Jekyll powered block for Jennifer Falconburg.",
+  "author": "James Nettik",
+  "devDependencies": {
+    "autoprefixer": "^5.2.0",
+    "browser-sync": "^2.7.6",
+    "gulp": "^3.9.0",
+    "require-dir": "^0.3.0"
+  }
+}
