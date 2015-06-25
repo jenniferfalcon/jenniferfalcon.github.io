@@ -1,0 +1,17 @@
+.l--3up {
+  &:nth-child(3n+1) {
+    @include grid-span(4, 1);
+  }
+
+  &:nth-child(3n+2) {
+    @include grid-span(4, 5);
+  }
+
+  &:nth-child(3n+3) {
+    @include grid-span(4, 9);
+  }
+
+  &:nth-child(3n+4) {
+    clear: right;
+  }
+}

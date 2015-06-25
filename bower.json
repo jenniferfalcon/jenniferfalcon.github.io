@@ -14,5 +14,9 @@
     "app/_bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "breakpoint-sass": "~2.6.1",
+    "singularity": "~1.6.2"
+  }
 }

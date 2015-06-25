@@ -1,0 +1,13 @@
+// Layout
+//----------------------------------------------------------------------------
+// Grid.
+@include add-grid(12);
+@include add-gutter(1/3);
+
+// Width.
+$w-full: 1104px;
+$w-content: 620px;
+$w-sidebar: 320px;
+$w-sidebar-first: 320px;
+$w-gutter: 30px;
+$w-gutter-half: $w-gutter / 2;

@@ -11,3 +11,12 @@ destination: ./public_html
 collections:
   # Site portfolio itms
   projects:
+    output: true
+    permalink: /:title/
+
+defaults:
+  - scope:
+      path: ''
+      type: projects
+    values:
+      layout: project--full
