@@ -1,14 +1,12 @@
 # Site settings
-title: James Nettik
-email: james.nettik@gmail.com
+title: Jennifer Falconburg
+email: jennifer.falconburg@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://0.0.0.0:9999" # the base hostname & protocol for your site
-twitter_username: jnettik
-github_username:  jnettik
 
 # Jekyll
 source:      ./app
-destination: ./build
+destination: ./public_html
 
 # Build settings
 markdown: kramdown
