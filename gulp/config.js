@@ -20,7 +20,7 @@ module.exports = {
     config: '_config.yml'
   },
   sass: {
-    input: src + '/_sass/**/*.scss',
+    input: src + '/_sass/*.scss',
     output: src + '/css',
     options: {}
   },
@@ -39,7 +39,8 @@ module.exports = {
   watch: {
     jekyll: [
       '_config.yml',
-      src + '/_data/**/*.{json,yml,csv}',
+      src + '/_data/**/*.{json,yml,yaml,csv}',
+      src + '/_projects/**/*',
       src + '/_includes/**/*.{html,xml}',
       src + '/_layouts/*.html',
       src + '/_plugins/*.rb',
