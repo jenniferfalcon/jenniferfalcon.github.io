@@ -1,0 +1,7 @@
+<nav role="navigation">
+  <ul>
+    {% for link in site.data.main-menu %}
+    <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

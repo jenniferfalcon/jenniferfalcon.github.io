@@ -1,0 +1,11 @@
+- network: Twitter
+  url: http://www.twitter.com
+
+- network: Instagram
+  url: http://www.instagram.com
+
+- network: Pinterest
+  url: http://www.pinterest.com
+
+- network: LinkedIn
+  url: http://www.linkedin.com

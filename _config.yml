@@ -1,12 +1,13 @@
 # Site settings
-title: Jennifer Falconburg
-email: jennifer.falconburg@gmail.com
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://0.0.0.0:9999" # the base hostname & protocol for your site
+title: Jennifer Makes Things
+email: hello@jennifermakesthings.com
+url: "http://0.0.0.0:9999"
+location: "Denver, Colorado"
 
 # Jekyll
 source:      ./app
 destination: ./public_html
 
-# Build settings
-markdown: kramdown
+collections:
+  # Site portfolio itms
+  projects:
