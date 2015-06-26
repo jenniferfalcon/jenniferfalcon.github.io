@@ -103,6 +103,15 @@ img {
   height: auto;
 }
 
+figure {
+  margin: 0;
+
+  img {
+    display: block;
+  }
+}
+
+
 
 //
 // Definition Lists
@@ -116,7 +125,7 @@ dt {
 }
 
 dd {
-  margin-left: $w-gutter;
+  margin-left: gutter-span();
 }
 
 //

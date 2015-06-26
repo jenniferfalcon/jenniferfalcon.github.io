@@ -1,17 +1,35 @@
 .l--3up {
-  &:nth-child(3n+1) {
-    @include grid-span(4, 1);
+  margin-bottom: gutter-span();
+
+  @include breakpoint($bp-medium ($bp-large - 1px)) {
+    &:nth-child(odd) {
+      @include grid-span(6, 1);
+    }
+
+    &:nth-child(even) {
+      @include grid-span(6, 7);
+    }
+
+    &:nth-child(2n+3) {
+      clear: right;
+    }
   }
 
-  &:nth-child(3n+2) {
-    @include grid-span(4, 5);
-  }
+  @include breakpoint($bp-large) {
+    &:nth-child(3n+1) {
+      @include grid-span(4, 1);
+    }
 
-  &:nth-child(3n+3) {
-    @include grid-span(4, 9);
-  }
+    &:nth-child(3n+2) {
+      @include grid-span(4, 5);
+    }
 
-  &:nth-child(3n+4) {
-    clear: right;
+    &:nth-child(3n+3) {
+      @include grid-span(4, 9);
+    }
+
+    &:nth-child(3n+4) {
+      clear: right;
+    }
   }
 }
