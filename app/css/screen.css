@@ -366,10 +366,11 @@ th {
 
 html {
   font-size: 16px;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  font-family: Open Sans, Helvetica, Arial, sans-serif; }
 
 body {
-  color: #333; }
+  color: #000000; }
 
 div,
 section,
@@ -387,7 +388,7 @@ h1 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0.375em;
-  font-family: sans-serif; }
+  font-family: serif; }
 
 h2 {
   font-size: 1.75em;
@@ -396,7 +397,7 @@ h2 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0.42857em;
-  font-family: sans-serif; }
+  font-family: serif; }
 
 h3 {
   font-size: 1.5em;
@@ -405,7 +406,7 @@ h3 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0.5em;
-  font-family: sans-serif; }
+  font-family: serif; }
 
 h4 {
   font-size: 1em;
@@ -414,7 +415,7 @@ h4 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
-  font-family: sans-serif; }
+  font-family: serif; }
 
 h5 {
   font-size: 0.875em;
@@ -423,7 +424,7 @@ h5 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
-  font-family: sans-serif; }
+  font-family: serif; }
 
 h6 {
   font-size: 0.75em;
@@ -439,6 +440,11 @@ a {
   color: #4168b6; }
   a:hover {
     color: #345390; }
+
+nav ul, nav ol {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 p {
   margin: 0 0 0.75em; }

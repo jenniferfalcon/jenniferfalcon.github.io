@@ -16,6 +16,7 @@ html {
   font-size: $base-font-size;
   // Override the default line height to allow for smaller baseline increments.
   @include adjust-leading-to(4);
+  font-family: $ff-body;
 }
 
 body {
@@ -79,6 +80,14 @@ h6 {
 //
 a {
   @include link-colors($clr-link, darken($clr-link, 10%));
+}
+
+nav {
+  ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 

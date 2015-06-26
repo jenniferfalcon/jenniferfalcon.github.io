@@ -6,13 +6,13 @@
 // Typefaces.
 //----------------------------------------------------------------------------
 $ff-mono:  monospace;
-$ff-sans:  sans-serif;
+$ff-sans:  Open Sans, Helvetica, Arial, sans-serif;
 $ff-serif: serif;
 
 // Semantic fonts.
 //----------------------------------------------------------------------------
-$ff-body:    $ff-serif;
-$ff-heading: $ff-sans;
+$ff-body:    $ff-sans;
+$ff-heading: $ff-serif;
 $ff-display: $ff-heading;
 
 // Font size.
