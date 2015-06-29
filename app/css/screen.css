@@ -628,8 +628,41 @@ tr.even {
     .social-menu > li {
       display: inline-block; } }
 
+.site-header h1 {
+  margin: 0;
+  padding: 1.21429em;
+  text-align: center; }
+
+@media (min-width: 26.25em) {
+  .site-header {
+    background-image: url(../images/bgs/site-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: -webkit-calc(100vh - 55px);
+    height: calc(100vh - 55px); }
+    .site-header h1 {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); } }
+
 footer[role="contentinfo"] {
+  background-color: #f4f4f4;
   padding: 10em 0 2.14286em; }
+  @media (max-width: 36.1875em) {
+    footer[role="contentinfo"] {
+      background-image: url(../images/bgs/site-footer-laptop.jpg);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover; } }
+  @media (min-width: 36.25em) {
+    footer[role="contentinfo"] {
+      background-image: url(../images/bgs/site-footer.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; } }
 
 .footer-credits {
   margin: 3.14286em 0 1.71429em;
