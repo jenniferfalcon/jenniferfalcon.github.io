@@ -4,9 +4,38 @@
   > header {
     border-top: 1px solid $clr-border;
     padding: em(40px) 0;
+    position: relative;
+
+    &:before {
+      background-color: #fff;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      content: '';
+      display: block;
+      height: 33px;
+      left: 50%;
+      margin-left: -42px;
+      position: absolute;
+      top: -17px;
+      width: 84px;
+    }
   }
 
   @include breakpoint($bp-medium) {
     padding: em(76px) 0;
+  }
+}
+
+[id="projects"] {
+  > header:before {
+    background-image: url(../images/icons/briefcase.png);
+  }
+}
+
+[id="about"] {
+  > header:before {
+    background-color: #f2f2f2;
+    background-image: url(../images/icons/typewriter.png);
   }
 }

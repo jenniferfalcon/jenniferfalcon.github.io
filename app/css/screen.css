@@ -571,10 +571,31 @@ tr.even {
   padding: 2.71429em 0; }
   .homepage-section > header {
     border-top: 1px solid #8fa9be;
-    padding: 2.85714em 0; }
+    padding: 2.85714em 0;
+    position: relative; }
+    .homepage-section > header:before {
+      background-color: #fff;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      content: '';
+      display: block;
+      height: 33px;
+      left: 50%;
+      margin-left: -42px;
+      position: absolute;
+      top: -17px;
+      width: 84px; }
   @media (min-width: 26.25em) {
     .homepage-section {
       padding: 5.42857em 0; } }
+
+[id="projects"] > header:before {
+  background-image: url(../images/icons/briefcase.png); }
+
+[id="about"] > header:before {
+  background-color: #f2f2f2;
+  background-image: url(../images/icons/typewriter.png); }
 
 .section-lede {
   font-size: 1.57143em;
