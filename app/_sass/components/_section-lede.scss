@@ -1,5 +1,6 @@
 .section-lede {
   @include adjust-font-size-to($fs-l);
+  margin: 0;
   text-align: center;
 
   > strong {

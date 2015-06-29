@@ -1,5 +1,5 @@
-<nav role="navigation">
-  <ul>
+<nav id="main-nav" role="navigation">
+  <ul class="main-nav clearfix">
     {% for link in site.data.main-menu %}
     <li><a href="{{ link.url }}">{{ link.text }}</a></li>
     {% endfor %}
