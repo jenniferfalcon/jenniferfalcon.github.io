@@ -1,6 +1,6 @@
 .l--constrained {
-  padding-left: gutter-span() / 2;
-  padding-right: gutter-span() / 2;
+  padding-left: em($w-gutter-half);
+  padding-right: em($w-gutter-half);
 
   @include breakpoint($bp-full) {
     margin-left: auto;

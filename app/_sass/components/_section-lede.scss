@@ -1,0 +1,10 @@
+.section-lede {
+  @include adjust-font-size-to($fs-l);
+  text-align: center;
+
+  > strong {
+    font-size: em(30px, $fs-l);
+    font-family: $ff-heading-alt;
+    font-weight: normal;
+  }
+}

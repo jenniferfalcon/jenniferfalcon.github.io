@@ -8,11 +8,13 @@
 $ff-mono:  monospace;
 $ff-sans:  Open Sans, Helvetica, Arial, sans-serif;
 $ff-serif: Trend Slab One, Georgia, serif;
+$ff-grunge: Brandon Printed Inline, $ff-sans;
 
 // Semantic fonts.
 //----------------------------------------------------------------------------
 $ff-body:    $ff-sans;
 $ff-heading: $ff-serif;
+$ff-heading-alt: $ff-grunge;
 $ff-display: $ff-heading;
 
 // Font size.
@@ -21,7 +23,7 @@ $fs-2xs:     12px;
 $fs-xs:      13px;
 $fs-s:       14px;
 $fs-m:       16px;
-$fs-l:       21px;
+$fs-l:       22px;
 $fs-xl:      24px;
 $fs-2xl:     28px;
 $fs-3xl:     32px;

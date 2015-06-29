@@ -5,4 +5,6 @@
 @include add-gutter(1/2);
 
 // Width.
-$w-full: 816px;
+$w-gutter: 34px;
+$w-gutter-half: $w-gutter / 2;
+$w-full: 826px + $w-gutter;
