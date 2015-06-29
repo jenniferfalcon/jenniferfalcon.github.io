@@ -1,0 +1,49 @@
+.factoids {
+  margin: 0;
+  padding: 0;
+
+  > li {
+    list-style: none;
+    margin-bottom: em(20px);
+    min-height: 54px;
+    padding-left: em(78px);
+    position: relative;
+
+    &:before {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+      display: block;
+      height: 54px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 54px;
+    }
+  }
+
+  @include breakpoint($bp-large) {
+    @include grid-span(7.5, 5.5);
+  }
+}
+
+.factoids--mountain:before {
+  background-image: url(../images/icons/mountain.png);
+}
+
+.factoids--cat:before {
+  background-image: url(../images/icons/cat.png);
+}
+
+.factoids--bowl:before {
+  background-image: url(../images/icons/bowl.png);
+}
+
+.factoids--dalek:before {
+  background-image: url(../images/icons/dalek.png);
+}
+
+.factoids--star:before {
+  background-image: url(../images/icons/star.png);
+}

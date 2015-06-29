@@ -681,6 +681,48 @@ tr.even {
 [id="about"] {
   background-color: #f2f2f2; }
 
+.about--intro {
+  margin-bottom: 2.85714em; }
+
+.about-card {
+  border: 1px solid #000;
+  margin-bottom: 1.42857em;
+  padding: 0 0 1.42857em;
+  position: relative; }
+  .about-card > figure {
+    margin: -1px -1px 1.85714em;
+    position: relative; }
+  @media (min-width: 36.25em) {
+    .about-card {
+      width: 31.42857%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 0;
+      clear: none; } }
+
+.about-card--title {
+  font-size: 1.14286em;
+  line-height: 1.5em;
+  margin-bottom: 0.85714em;
+  padding-bottom: 1em;
+  position: relative;
+  text-align: center; }
+  .about-card--title:before {
+    background-color: #8fa9be;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    margin-left: -2.78571em;
+    position: absolute;
+    width: 5.57143em; }
+
+.about-card--role {
+  color: #8fa9be;
+  font-style: italic;
+  text-align: center; }
+
 [id="main-nav"] {
   background-color: #8fa9be; }
 
@@ -773,3 +815,46 @@ footer[role="contentinfo"] {
     .footer-credits > li {
       display: inline-block;
       margin: 0 2.14286em; } }
+
+.factoids {
+  margin: 0;
+  padding: 0; }
+  .factoids > li {
+    list-style: none;
+    margin-bottom: 1.42857em;
+    min-height: 54px;
+    padding-left: 5.57143em;
+    position: relative; }
+    .factoids > li:before {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+      display: block;
+      height: 54px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 54px; }
+  @media (min-width: 36.25em) {
+    .factoids {
+      width: 61.42857%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none; } }
+
+.factoids--mountain:before {
+  background-image: url(../images/icons/mountain.png); }
+
+.factoids--cat:before {
+  background-image: url(../images/icons/cat.png); }
+
+.factoids--bowl:before {
+  background-image: url(../images/icons/bowl.png); }
+
+.factoids--dalek:before {
+  background-image: url(../images/icons/dalek.png); }
+
+.factoids--star:before {
+  background-image: url(../images/icons/star.png); }
