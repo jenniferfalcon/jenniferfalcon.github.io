@@ -1,0 +1,80 @@
+.project--title {
+  @include adjust-font-size-to($fs-m);
+  margin-bottom: em(12px);
+  padding-bottom: em(14px);
+  position: relative;
+  text-align: center;
+
+  // Divider
+  &:before {
+    background-color: $blue-grey;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    margin-left: em(-39px);
+    position: absolute;
+    width: em(78px);
+  }
+}
+
+.project--category {
+  color: $blue-grey;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project--link {
+  background-color: #fff;
+  border: 1px solid #000;
+  box-shadow: -4px 0 0 #fff, 4px 0 0 #fff;
+  bottom: em(-20px, $fs-m);
+  color: #000;
+  display: block;
+  font-size: em($fs-m);
+  left: 50%;
+  margin-left: em(-50px, $fs-m);
+  line-height: em(40px, $fs-m);
+  padding: 0 em(30px, $fs-m);
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: border-color .25s, color .25s;
+
+  &:hover,
+  &:focus {
+    border-color: $blue-grey;
+    color: $blue-grey;
+  }
+}
+
+.project__card {
+  border: 1px solid #000;
+  padding: 0 0 em(50px);
+  position: relative;
+
+  > figure {
+    margin: -1px -1px em(26px);
+    position: relative;
+
+    // Triangle
+    &:before {
+      border-style: solid;
+      border-color: transparent;
+      border-bottom-color: #fff;
+      border-bottom-width: em(20px);
+      border-left-width: em(24px);
+      border-right-width: em(24px);
+      border-top-width: em(20px);
+      bottom: 0;
+      content: '';
+      display: block;
+      left: 50%;
+      margin-left: -24px;
+      position: absolute;
+    }
+  }
+}

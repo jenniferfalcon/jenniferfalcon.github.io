@@ -529,6 +529,7 @@ tr.even {
       width: 61.42857em; } }
 
 .l--3up {
+  margin-top: 1.42857em;
   margin-bottom: 2.85714%; }
   @media (min-width: 26.25em) and (max-width: 36.1875em) {
     .l--3up:nth-child(odd) {
@@ -607,6 +608,76 @@ tr.even {
     font-family: Brandon Printed Inline, Open Sans, Helvetica, Arial, sans-serif;
     font-weight: normal; }
 
+.project--title {
+  font-size: 1.14286em;
+  line-height: 1.5em;
+  margin-bottom: 0.85714em;
+  padding-bottom: 1em;
+  position: relative;
+  text-align: center; }
+  .project--title:before {
+    background-color: #8fa9be;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    margin-left: -2.78571em;
+    position: absolute;
+    width: 5.57143em; }
+
+.project--category {
+  color: #8fa9be;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase; }
+
+.project--link {
+  background-color: #fff;
+  border: 1px solid #000;
+  -webkit-box-shadow: -4px 0 0 #fff, 4px 0 0 #fff;
+          box-shadow: -4px 0 0 #fff, 4px 0 0 #fff;
+  bottom: -1.25em;
+  color: #000;
+  display: block;
+  font-size: 1.14286em;
+  left: 50%;
+  margin-left: -3.125em;
+  line-height: 2.5em;
+  padding: 0 1.875em;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: border-color 0.25s, color 0.25s;
+          transition: border-color 0.25s, color 0.25s; }
+  .project--link:hover,
+  .project--link:focus {
+    border-color: #8fa9be;
+    color: #8fa9be; }
+
+.project__card {
+  border: 1px solid #000;
+  padding: 0 0 3.57143em;
+  position: relative; }
+  .project__card > figure {
+    margin: -1px -1px 1.85714em;
+    position: relative; }
+    .project__card > figure:before {
+      border-style: solid;
+      border-color: transparent;
+      border-bottom-color: #fff;
+      border-bottom-width: 1.42857em;
+      border-left-width: 1.71429em;
+      border-right-width: 1.71429em;
+      border-top-width: 1.42857em;
+      bottom: 0;
+      content: '';
+      display: block;
+      left: 50%;
+      margin-left: -24px;
+      position: absolute; }
+
 [id="about"] {
   background-color: #f2f2f2; }
 
@@ -624,6 +695,9 @@ tr.even {
       padding: 0 1.14286em;
       text-decoration: none;
       text-transform: uppercase; }
+      .main-nav > li > a:hover,
+      .main-nav > li > a:focus {
+        text-decoration: underline; }
   @media (max-width: 26.1875em) {
     .main-nav > li {
       float: left;

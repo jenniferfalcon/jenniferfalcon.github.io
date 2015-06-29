@@ -15,6 +15,11 @@
       padding: 0 em(16px);
       text-decoration: none;
       text-transform: uppercase;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
     }
   }
 
