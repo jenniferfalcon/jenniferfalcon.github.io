@@ -858,3 +858,69 @@ footer[role="contentinfo"] {
 
 .factoids--star:before {
   background-image: url(../images/icons/star.png); }
+
+.skills {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .skills > li {
+    font-size: 0.92857em;
+    line-height: 1.38462em;
+    color: #dc8991;
+    float: left;
+    font-style: italic;
+    list-style: none;
+    padding-top: 50px;
+    position: relative;
+    text-align: center; }
+    .skills > li:before {
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      content: '';
+      display: block;
+      height: 36px;
+      left: 50%;
+      margin-left: -21px;
+      position: absolute;
+      top: 0;
+      width: 42px; }
+  @media (max-width: 26.1875em) {
+    .skills > li {
+      margin-bottom: 20px;
+      width: 50%; } }
+  @media (min-width: 26.25em) and (max-width: 36.1875em) {
+    .skills > li {
+      margin-bottom: 20px;
+      width: 33.33333%; } }
+  @media (min-width: 36.25em) {
+    .skills {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      text-align: center; }
+      .skills > li {
+        float: none;
+        display: inline-block; } }
+
+.skills--print-design:before {
+  background-image: url(../images/icons/printer.png); }
+
+.skills--branding:before {
+  background-image: url(../images/icons/stamp.png); }
+
+.skills--web-design:before {
+  background-image: url(../images/icons/monitor.png); }
+
+.skills--photography:before {
+  background-image: url(../images/icons/camera.png); }
+
+.skills--videography:before {
+  background-image: url(../images/icons/video-camera.png); }
+
+.skills--project-management:before {
+  background-image: url(../images/icons/check-box.png); }
