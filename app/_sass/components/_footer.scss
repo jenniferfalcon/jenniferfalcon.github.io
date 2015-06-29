@@ -1,0 +1,28 @@
+footer[role="contentinfo"] {
+  padding: em(140px) 0 em(30px);
+}
+
+.footer-credits {
+  margin: em(44px) 0 em(24px);
+  padding: 0;
+  text-align: center;
+
+  > li {
+    list-style: none;
+  }
+
+  li, li a {
+    color: $pink;
+  }
+
+  li a {
+    text-decoration: none;
+  }
+
+  @include breakpoint($bp-large) {
+    > li {
+      display: inline-block;
+      margin: 0 em(30px);
+    }
+  }
+}

@@ -612,3 +612,36 @@ tr.even {
       display: inline-block; }
       .main-nav > li > a {
         padding: 0 2.85714em; } }
+
+.social-menu {
+  text-align: center; }
+  .social-menu a {
+    color: #8fa9be;
+    font-family: Trend Slab One, Georgia, serif;
+    padding: 0 0.85714em;
+    text-decoration: none; }
+  @media (max-width: 26.1875em) {
+    .social-menu > li {
+      float: left;
+      width: 50%; } }
+  @media (min-width: 26.25em) {
+    .social-menu > li {
+      display: inline-block; } }
+
+footer[role="contentinfo"] {
+  padding: 10em 0 2.14286em; }
+
+.footer-credits {
+  margin: 3.14286em 0 1.71429em;
+  padding: 0;
+  text-align: center; }
+  .footer-credits > li {
+    list-style: none; }
+  .footer-credits li, .footer-credits li a {
+    color: #dc8991; }
+  .footer-credits li a {
+    text-decoration: none; }
+  @media (min-width: 36.25em) {
+    .footer-credits > li {
+      display: inline-block;
+      margin: 0 2.14286em; } }

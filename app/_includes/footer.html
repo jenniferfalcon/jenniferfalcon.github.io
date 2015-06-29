@@ -1,12 +1,14 @@
 <footer role="contentinfo">
+  <h2 class="section-lede"><strong>Get in touch.</strong><br>I'm excited already!</h2>
+
   <ul class="footer-credits">
     <li>{{ site.location }}</li>
     <li><a href="{{ site.email | prepend:'mailto:' }}">{{ site.email }}</a></li>
     <li><a href="https://www.etsy.com/shop/BashStudio">Bash Studio</a></li>
   </ul>
 
-  <nav role="navigation" class="social-menu">
-    <ul>
+  <nav role="navigation">
+    <ul class="social-menu">
       {% for link in site.data.social-menu %}
       <li><a href="{{ link.url }}">{{ link.network }}</a></li>
       {% endfor %}
