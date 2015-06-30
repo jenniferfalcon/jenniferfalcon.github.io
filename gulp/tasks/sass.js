@@ -13,7 +13,7 @@ gulp.task('sass', function () {
     .src(config.sass.input)
     .pipe(plummer())
     // Run Sass on those files
-    .pipe(sass(config.sass.options).on('error', sass.logError))
+    .pipe(sass(config.sass.options))
     .pipe(autoprefixer(config.autoprefixer))
     // Write the resulting CSS in the output folder
     .pipe(gulp.dest(config.sass.output));
