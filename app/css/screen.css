@@ -591,7 +591,7 @@ tr.even {
     .homepage-section {
       padding: 5.42857em 0; } }
 
-[id="projects"] > header:before {
+.projects > header:before {
   background-image: url(../images/icons/briefcase.png); }
 
 [id="about"] > header:before {

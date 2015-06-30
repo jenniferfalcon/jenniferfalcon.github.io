@@ -1,15 +1,15 @@
-<section id="projects" class="homepage-section clearfix">
+<section class="homepage-section projects clearfix">
   <header class="l--constrained">
     <h2 class="section-lede">Design is not just what it looks like and feels like.<br><strong>Design is how it works.</strong></h2>
   </header>
 
-  <ul class="l--constrained skills clearfix">
+  <ul id="skills" class="l--constrained skills clearfix">
     {% for skill in site.data.skills %}
     <li class="skills--{{ skill.name | slugify }}">{{ skill.name }}</li>
     {% endfor %}
   </ul>
 
-  <div class="l--constrained clearfix">
+  <div id="work" class="l--constrained clearfix">
     {% for project in site.projects %}
     {% include project--card.html %}
     {% endfor %}
