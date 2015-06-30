@@ -127,5 +127,24 @@
 }
 
 [id="project-full"] {
-  padding-top: em(50px);
+  margin-top: em(50px);
+}
+
+.project--full {
+  margin-bottom: em(50px);
+}
+
+.project--full--close {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: block;
+  font-size: em(26px);
+  line-height: em(32px, 26px);
+  height: em(32px, 26px);
+  margin: 0 auto em(32px, 26px);
+  outline: none;
+  padding: 0;
+  width: em(32px, 26px);
 }

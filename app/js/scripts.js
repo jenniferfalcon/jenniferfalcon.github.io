@@ -23,10 +23,44 @@ if (!String.prototype.startsWith) {
     }
   });
 
-  // Gallery slideshow
-  $('.project--gallery').bxSlider({
-    controls: false,
-    mode: 'fade',
-    video: true
+  // Ajax for projects
+  $('.project--link').click(function(e) {
+    e.preventDefault();
+
+    var href = $.attr(this, 'href');
+
+    $('#project-full').load(href + 'index.html', function() {
+      // Gallery slideshow
+      $('.project--gallery').bxSlider({
+        controls: false,
+        mode: 'fade',
+        video: true
+      });
+
+      // Close button
+      var close = $('<button>', {
+        text: 'X',
+        'class': ['project--full--close']
+      });
+
+      $('.project--full').prepend(close);
+
+      $('html,body').animate({
+        scrollTop: $('#project-full').offset().top
+      }, 500);
+
+      $('.project--full--close').click(function(e) {
+        e.preventDefault();
+
+        $('#project-full').slideUp({
+          duration: 500,
+          complete: function() {
+            $(this)
+              .html('')
+              .attr('style', '');
+          }
+        });
+      });
+    });
   });
 })(document, window, jQuery);

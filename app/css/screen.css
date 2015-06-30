@@ -591,8 +591,10 @@ tr.even {
     .homepage-section {
       padding: 5.42857em 0; } }
 
-.projects > header:before {
-  background-image: url(../images/icons/briefcase.png); }
+.projects {
+  padding-bottom: 0; }
+  .projects > header:before {
+    background-image: url(../images/icons/briefcase.png); }
 
 [id="about"] > header:before {
   background-color: #f2f2f2;
@@ -719,7 +721,26 @@ tr.even {
       color: #8fa9be; }
 
 [id="project-full"] {
-  padding-top: 3.57143em; }
+  margin-top: 3.57143em; }
+
+.project--full {
+  margin-bottom: 3.57143em; }
+
+.project--full--close {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: block;
+  font-size: 1.85714em;
+  line-height: 1.23077em;
+  height: 1.23077em;
+  margin: 0 auto 1.23077em;
+  outline: none;
+  padding: 0;
+  width: 1.23077em; }
 
 [id="about"] {
   background-color: #f2f2f2; }

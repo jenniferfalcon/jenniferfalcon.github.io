@@ -28,6 +28,8 @@
 }
 
 .projects {
+  padding-bottom: 0;
+
   > header:before {
     background-image: url(../images/icons/briefcase.png);
   }
