@@ -79,6 +79,36 @@
   }
 }
 
+.project--gallery--wrapper {
+  @include breakpoint($bp-large) {
+    @include grid-span(7, 1)
+  }
+}
+
+.project--description {
+  @include breakpoint($bp-large) {
+    @include grid-span(5, 8);
+  }
+}
+
+.project--description--label {
+  @include adjust-font-size-to($fs-m);
+  margin: 0;
+
+  &:after {
+    content: ":";
+  }
+}
+
+.project--title__full {
+  margin-bottom: em(25px, $fs-h2);
+  text-align: center;
+
+  @include breakpoint($bp-large) {
+    margin-bottom: em(50px, $fs-h2);
+  }
+}
+
 .project--gallery {
   margin: 0;
   padding: 0;
@@ -94,4 +124,8 @@
       color: $blue-grey;
     }
   }
+}
+
+[id="project-full"] {
+  padding-top: em(50px);
 }
