@@ -529,7 +529,7 @@ tr.even {
       width: 61.42857em; } }
 
 .l--3up {
-  margin-top: 1.42857em;
+  margin-top: 2.85714em;
   margin-bottom: 2.85714%; }
   @media (min-width: 26.25em) and (max-width: 36.1875em) {
     .l--3up:nth-child(odd) {
