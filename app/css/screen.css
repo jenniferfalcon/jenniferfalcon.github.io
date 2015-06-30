@@ -572,7 +572,8 @@ tr.even {
   padding: 2.71429em 0; }
   .homepage-section > header {
     border-top: 1px solid #8fa9be;
-    padding: 2.85714em 0;
+    padding-top: 2.85714em;
+    padding-bottom: 2.85714em;
     position: relative; }
     .homepage-section > header:before {
       background-color: #fff;
