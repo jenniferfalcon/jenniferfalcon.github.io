@@ -47,7 +47,8 @@ module.exports = {
       src + '/_posts/*.{markdown,md}',
       src + '/**/*.{html,markdown,md,yml,json,txt,xml}',
       src + '/*',
-      src + '/css/*.css'
+      src + '/css/*.css',
+      src + '/js/*.js'
     ],
     sass:    src + '/_sass/**/*.{sass,scss}'
   }
