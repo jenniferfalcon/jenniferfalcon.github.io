@@ -731,16 +731,16 @@ tr.even {
      -moz-appearance: none;
           appearance: none;
   background-color: #fff;
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-radius: 50%;
   display: block;
-  font-size: 1.85714em;
-  line-height: 1.23077em;
-  height: 1.23077em;
-  margin: 0 auto 1.23077em;
+  font-size: 1.71429em;
+  line-height: 1.16667em;
+  height: 1.33333em;
+  margin: 0 auto 1.33333em;
   outline: none;
   padding: 0;
-  width: 1.23077em; }
+  width: 1.33333em; }
 
 [id="about"] {
   background-color: #f2f2f2; }

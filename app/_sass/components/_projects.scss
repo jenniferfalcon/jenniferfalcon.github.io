@@ -137,14 +137,14 @@
 .project--full--close {
   appearance: none;
   background-color: #fff;
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-radius: 50%;
   display: block;
-  font-size: em(26px);
-  line-height: em(32px, 26px);
-  height: em(32px, 26px);
-  margin: 0 auto em(32px, 26px);
+  font-size: em(24px);
+  line-height: em(28px, 24px);
+  height: em(32px, 24px);
+  margin: 0 auto em(32px, 24px);
   outline: none;
   padding: 0;
-  width: em(32px, 26px);
+  width: em(32px, 24px);
 }

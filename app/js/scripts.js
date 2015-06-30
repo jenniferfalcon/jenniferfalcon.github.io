@@ -39,7 +39,7 @@ if (!String.prototype.startsWith) {
 
       // Close button
       var close = $('<button>', {
-        text: 'X',
+        text: '✕',
         'class': ['project--full--close']
       });
 
