@@ -78,3 +78,20 @@
     }
   }
 }
+
+.project--gallery {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+
+  figcaption {
+    text-align: right;
+
+    a {
+      color: $blue-grey;
+    }
+  }
+}

@@ -6,6 +6,7 @@ if (!String.prototype.startsWith) {
 }
 
 (function(document, window, $) {
+  // Animate scrolling of main menu clicks to site sections.
   $('a', '#main-nav').click(function(e){
     var hash = $.attr(this, 'href');
 
@@ -20,5 +21,12 @@ if (!String.prototype.startsWith) {
         history.pushState(null, null, hash);
       }
     }
+  });
+
+  // Gallery slideshow
+  $('.project--gallery').bxSlider({
+    controls: false,
+    mode: 'fade',
+    video: true
   });
 })(document, window, jQuery);

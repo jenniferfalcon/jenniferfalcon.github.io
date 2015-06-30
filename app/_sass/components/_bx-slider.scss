@@ -1,0 +1,29 @@
+.bx-wrapper {
+  position: relative;
+}
+
+.bx-controls {
+  position: absolute;
+  right: em(16px);
+  top: em(16px);
+  z-index: 100;
+}
+
+.bx-pager-item {
+  margin-bottom: em(10px);
+}
+
+.bx-pager-link {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: block;
+  height: em(20px);
+  transition: background-color .25s;
+  text-indent: -100%;
+  overflow: hidden;
+  width: em(20px);
+
+  &.active {
+    background-color: #fff;
+  }
+}

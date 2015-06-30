@@ -678,6 +678,16 @@ tr.even {
       margin-left: -24px;
       position: absolute; }
 
+.project--gallery {
+  margin: 0;
+  padding: 0; }
+  .project--gallery li {
+    list-style: none; }
+  .project--gallery figcaption {
+    text-align: right; }
+    .project--gallery figcaption a {
+      color: #8fa9be; }
+
 [id="about"] {
   background-color: #f2f2f2; }
 
@@ -924,3 +934,28 @@ footer[role="contentinfo"] {
 
 .skills--project-management:before {
   background-image: url(../images/icons/check-box.png); }
+
+.bx-wrapper {
+  position: relative; }
+
+.bx-controls {
+  position: absolute;
+  right: 1.14286em;
+  top: 1.14286em;
+  z-index: 100; }
+
+.bx-pager-item {
+  margin-bottom: 0.71429em; }
+
+.bx-pager-link {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: block;
+  height: 1.42857em;
+  -webkit-transition: background-color 0.25s;
+          transition: background-color 0.25s;
+  text-indent: -100%;
+  overflow: hidden;
+  width: 1.42857em; }
+  .bx-pager-link.active {
+    background-color: #fff; }
