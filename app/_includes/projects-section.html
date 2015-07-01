@@ -10,7 +10,8 @@
   </ul>
 
   <div id="work" class="l--constrained clearfix">
-    {% for project in site.projects %}
+    {% assign projects = site.projects | sort: 'position' %}
+    {% for project in projects %}
     {% include project--card.html %}
     {% endfor %}
   </div>
