@@ -1004,6 +1004,8 @@ footer[role="contentinfo"] {
 
 .bx-pager-link {
   border: 1px solid #fff;
+  -webkit-box-shadow: 1px 1px 0 #d3d3d3, -1px 1px 0 #D3D3D3, 1px -1px 0 #d3d3d3, -1px -1px 0 #d3d3d3;
+          box-shadow: 1px 1px 0 #d3d3d3, -1px 1px 0 #D3D3D3, 1px -1px 0 #d3d3d3, -1px -1px 0 #d3d3d3;
   border-radius: 50%;
   display: block;
   height: 1.42857em;
