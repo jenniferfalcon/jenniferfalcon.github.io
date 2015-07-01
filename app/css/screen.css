@@ -885,6 +885,8 @@ footer[role="contentinfo"] {
   margin: 0;
   padding: 0; }
   .factoids > li {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     list-style: none;
     margin-bottom: 1.42857em;
     min-height: 54px;
@@ -909,20 +911,30 @@ footer[role="contentinfo"] {
       margin-right: 0;
       clear: none; } }
 
-.factoids--mountain:before {
-  background-image: url(../images/icons/mountain.png); }
+.factoids--mountain {
+  padding-top: 1em; }
+  .factoids--mountain:before {
+    background-image: url(../images/icons/mountain.png); }
 
-.factoids--cat:before {
-  background-image: url(../images/icons/cat.png); }
+.factoids--cat {
+  padding-top: 0.28571em; }
+  .factoids--cat:before {
+    background-image: url(../images/icons/cat.png); }
 
-.factoids--bowl:before {
-  background-image: url(../images/icons/bowl.png); }
+.factoids--bowl {
+  padding-top: 0.28571em; }
+  .factoids--bowl:before {
+    background-image: url(../images/icons/bowl.png); }
 
-.factoids--dalek:before {
-  background-image: url(../images/icons/dalek.png); }
+.factoids--dalek {
+  padding-top: 0.28571em; }
+  .factoids--dalek:before {
+    background-image: url(../images/icons/dalek.png); }
 
-.factoids--star:before {
-  background-image: url(../images/icons/star.png); }
+.factoids--star {
+  padding-top: 1em; }
+  .factoids--star:before {
+    background-image: url(../images/icons/star.png); }
 
 .skills {
   -webkit-box-sizing: border-box;

@@ -3,6 +3,7 @@
   padding: 0;
 
   > li {
+    box-sizing: border-box;
     list-style: none;
     margin-bottom: em(20px);
     min-height: 54px;
@@ -28,22 +29,42 @@
   }
 }
 
-.factoids--mountain:before {
-  background-image: url(../images/icons/mountain.png);
+.factoids--mountain {
+  padding-top: em(14px);
+
+  &:before {
+    background-image: url(../images/icons/mountain.png);
+  }
 }
 
-.factoids--cat:before {
-  background-image: url(../images/icons/cat.png);
+.factoids--cat {
+  padding-top: em(4px);
+
+  &:before {
+    background-image: url(../images/icons/cat.png);
+  }
 }
 
-.factoids--bowl:before {
-  background-image: url(../images/icons/bowl.png);
+.factoids--bowl {
+  padding-top: em(4px);
+
+  &:before {
+    background-image: url(../images/icons/bowl.png);
+  }
 }
 
-.factoids--dalek:before {
-  background-image: url(../images/icons/dalek.png);
+.factoids--dalek {
+  padding-top: em(4px);
+
+  &:before {
+    background-image: url(../images/icons/dalek.png);
+  }
 }
 
-.factoids--star:before {
-  background-image: url(../images/icons/star.png);
+.factoids--star {
+  padding-top: em(14px);
+
+  &:before {
+    background-image: url(../images/icons/star.png);
+  }
 }
