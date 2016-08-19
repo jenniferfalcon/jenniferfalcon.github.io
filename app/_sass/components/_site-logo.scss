@@ -1,0 +1,5 @@
+.site-logo {
+  @include breakpoint(520px) {
+    max-width: 440px;
+  }
+}

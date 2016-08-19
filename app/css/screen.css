@@ -243,7 +243,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -538,6 +539,13 @@ tr.even {
       margin-right: -100%;
       margin-left: 0;
       clear: none; }
+      .l--3up:nth-child(odd):last-child {
+        width: 48.57143%;
+        float: left;
+        margin-right: -100%;
+        margin-left: 25.71429%;
+        clear: none;
+        clear: left; }
     .l--3up:nth-child(even) {
       width: 48.57143%;
       float: right;
@@ -553,12 +561,25 @@ tr.even {
       margin-right: -100%;
       margin-left: 0;
       clear: none; }
+      .l--3up:nth-child(3n+1):nth-last-child(2) {
+        width: 31.42857%;
+        float: left;
+        margin-right: -100%;
+        margin-left: 17.14286%;
+        clear: none;
+        clear: left; }
     .l--3up:nth-child(3n+2) {
       width: 31.42857%;
       float: left;
       margin-right: -100%;
       margin-left: 34.28571%;
       clear: none; }
+      .l--3up:nth-child(3n+2):nth-last-child(1) {
+        width: 31.42857%;
+        float: left;
+        margin-right: -100%;
+        margin-left: 51.42857%;
+        clear: none; }
     .l--3up:nth-child(3n+3) {
       width: 31.42857%;
       float: right;
@@ -652,10 +673,9 @@ tr.even {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: border-color 0.25s, color 0.25s;
-          transition: border-color 0.25s, color 0.25s; }
-  .project--link:hover,
-  .project--link:focus {
+  -webkit-transition: border-color .25s, color .25s;
+          transition: border-color .25s, color .25s; }
+  .project--link:hover, .project--link:focus {
     border-color: #8fa9be;
     color: #8fa9be; }
 
@@ -802,8 +822,7 @@ tr.even {
       padding: 0 1.14286em;
       text-decoration: none;
       text-transform: uppercase; }
-      .main-nav > li > a:hover,
-      .main-nav > li > a:focus {
+      .main-nav > li > a:hover, .main-nav > li > a:focus {
         text-decoration: underline; }
   @media (max-width: 26.1875em) {
     .main-nav > li {
@@ -891,7 +910,13 @@ footer[role="contentinfo"] {
     margin-bottom: 1.42857em;
     min-height: 54px;
     padding-left: 5.57143em;
-    position: relative; }
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .factoids > li:before {
       background-size: contain;
       background-position: center;
@@ -972,11 +997,9 @@ footer[role="contentinfo"] {
   @media (min-width: 36.25em) {
     .skills {
       display: -webkit-box;
-      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between;
       text-align: center; }
@@ -993,14 +1016,14 @@ footer[role="contentinfo"] {
 .skills--web-design:before {
   background-image: url(../images/icons/monitor.png); }
 
-.skills--photography:before {
+.skills--photo-video:before {
   background-image: url(../images/icons/camera.png); }
-
-.skills--videography:before {
-  background-image: url(../images/icons/video-camera.png); }
 
 .skills--project-management:before {
   background-image: url(../images/icons/check-box.png); }
+
+.skills--writing:before {
+  background-image: url(../images/icons/writing-icon.png); }
 
 .bx-wrapper {
   position: relative; }
@@ -1021,10 +1044,14 @@ footer[role="contentinfo"] {
   border-radius: 50%;
   display: block;
   height: 1.42857em;
-  -webkit-transition: background-color 0.25s;
-          transition: background-color 0.25s;
+  -webkit-transition: background-color .25s;
+          transition: background-color .25s;
   text-indent: -100%;
   overflow: hidden;
   width: 1.42857em; }
   .bx-pager-link.active {
     background-color: #fff; }
+
+@media (min-width: 32.5em) {
+  .site-logo {
+    max-width: 440px; } }

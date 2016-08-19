@@ -64,14 +64,18 @@
   background-image: url(../images/icons/monitor.png);
 }
 
-.skills--photography:before {
+.skills--photo-video:before {
   background-image: url(../images/icons/camera.png);
 }
 
-.skills--videography:before {
-  background-image: url(../images/icons/video-camera.png);
-}
+// .skills--videography:before {
+//   background-image: url(../images/icons/video-camera.png);
+// }
 
 .skills--project-management:before {
   background-image: url(../images/icons/check-box.png);
+}
+
+.skills--writing:before {
+  background-image: url(../images/icons/writing-icon.png);
 }

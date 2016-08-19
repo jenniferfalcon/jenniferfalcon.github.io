@@ -9,6 +9,8 @@
     min-height: 54px;
     padding-left: em(78px);
     position: relative;
+    display: flex;
+    align-items: center;
 
     &:before {
       background-size: contain;
