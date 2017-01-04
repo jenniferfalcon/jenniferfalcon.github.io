@@ -50,6 +50,7 @@ _site/
 build/
 public_html/
 .sass-cache/
+dist/
 
 
 ### Node ###
