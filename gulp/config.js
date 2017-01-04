@@ -1,5 +1,5 @@
 var src               = 'app';
-var build             = 'public_html';
+var build             = 'dist';
 
 module.exports = {
   browsersync: {
