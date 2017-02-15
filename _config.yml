@@ -7,7 +7,7 @@ location: "Denver, Colorado"
 
 # Jekyll
 source:      ./app
-destination: ./public_html
+destination: ./dist
 
 collections:
   # Site portfolio itms

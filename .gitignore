@@ -51,7 +51,6 @@ build/
 public_html/
 .sass-cache/
 
-
 ### Node ###
 # Logs
 logs
