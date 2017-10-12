@@ -370,6 +370,12 @@ th {
   font-style: normal; }
 
 @font-face {
+  font-family: "Mathilde";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/mathilde/mathilde.woff2") format("woff2"), url("../fonts/mathilde/mathilde.woff") format("woff"); }
+
+@font-face {
   font-family: 'Brandon Printed Inline';
   src: url("../fonts/brandon/brandon-printed-inline.eot");
   src: url("../fonts/brandon/brandon-printed-inline.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/brandon-printed-inline.woff2") format("woff2"), url("../fonts/brandon/brandon-printed-inline.woff") format("woff"), url("../fonts/brandon/brandon-printed-inline.ttf") format("truetype"), url("../fonts/brandon/brandon-printed-inline.svg#brandon_printedinline") format("svg");
@@ -868,6 +874,62 @@ tr.even {
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%); } }
+
+.c-profile__survey {
+  counter-reset: survey_questions;
+  margin: 0 0 2em; }
+  .c-profile__survey-question {
+    margin-bottom: .25rem;
+    padding-left: 1.25rem;
+    position: relative; }
+    .c-profile__survey-question:after {
+      content: counter(survey_questions) ".";
+      counter-increment: survey_questions;
+      font-weight: 700;
+      left: 0;
+      position: absolute;
+      top: 0; }
+  .c-profile__survey-answer {
+    margin: 0 0 1.5rem 1.25rem; }
+    .c-profile__survey-answer[data-survey-type="text"] {
+      border-bottom: none;
+      font-family: "Mathilde", Open Sans, Helvetica, Arial, sans-serif;
+      font-size: 2.85714rem;
+      line-height: .75;
+      margin-bottom: .75rem;
+      padding: 0.6em 0 0;
+      position: relative; }
+      .c-profile__survey-answer[data-survey-type="text"]:after {
+        border-bottom: 1px solid #000000;
+        bottom: 0.85714rem;
+        content: '';
+        display: block;
+        left: 0;
+        position: absolute;
+        width: 100%; }
+  .c-profile__survey-options {
+    list-style: upper-alpha;
+    margin: 0 0 0 1.25rem;
+    padding: 0; }
+  .c-profile__survey-option {
+    float: left;
+    width: 50%; }
+    .c-profile__survey-option.selected {
+      position: relative; }
+      .c-profile__survey-option.selected:after {
+        content: "O";
+        position: absolute;
+        font-family: "Mathilde", Open Sans, Helvetica, Arial, sans-serif;
+        font-size: 3.57143rem;
+        left: -0.56em;
+        top: 0.4em; }
+  @media (min-width: 36.25em) {
+    .c-profile__survey {
+      width: 61.42857%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none; } }
 
 footer[role="contentinfo"] {
   background-color: #f4f4f4;
