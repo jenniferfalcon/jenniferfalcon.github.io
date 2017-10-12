@@ -16,6 +16,9 @@
       "browserify-shim"
     ]
   },
+  "scripts": {
+    "gulp": "gulp"
+  },
   "devDependencies": {
     "browser-sync": "^2.7.6",
     "browserify": "^10.2.4",

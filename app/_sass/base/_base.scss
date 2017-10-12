@@ -18,8 +18,13 @@
   font-style: normal;
 }
 
-
-
+@font-face {
+  font-family: "Mathilde";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/mathilde/mathilde.woff2") format("woff2"),
+       url("../fonts/mathilde/mathilde.woff") format("woff");
+}
 
 @font-face {
   font-family: 'Brandon Printed Inline';

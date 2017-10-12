@@ -1,0 +1,76 @@
+@function rem($size, $base: $base-font-size) {
+  $rem-size: $size / $base;
+  @return #{$rem-size}rem;
+}
+
+.c-profile__survey {
+  counter-reset: survey_questions;
+  margin: 0 0 2em;
+
+  &-question {
+    margin-bottom: .25rem;
+    padding-left: 1.25rem;
+    position: relative;
+
+    &:after {
+      content: counter(survey_questions) ".";
+      counter-increment: survey_questions;
+      font-weight: $fw-bold;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &-answer {
+    margin: 0 0 1.5rem 1.25rem;
+
+    &[data-survey-type="text"] {
+      border-bottom: none;
+      font-family: "Mathilde", $ff-sans;
+      font-size: rem(40px);
+      line-height: .75;
+      margin-bottom: .75rem;
+      padding: em(24px, 40px) 0 0;
+      position: relative;
+
+      &:after {
+        border-bottom: 1px solid $clr-text;
+        bottom: rem(12px);
+        content: '';
+        display: block;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+
+  &-options {
+    list-style: upper-alpha;
+    margin: 0 0 0 1.25rem;
+    padding: 0;
+  }
+
+  &-option {
+    float: left;
+    width: 50%;
+
+    &.selected {
+      position: relative;
+
+      &:after {
+        content: "O";
+        position: absolute;
+        font-family: "Mathilde", $ff-sans;
+        font-size: rem(50px);
+        left: em(-28px, 50px);
+        top: em(20px, 50px);
+      }
+    }
+  }
+
+  @include breakpoint($bp-large) {
+    @include grid-span(7.5, 5.5);
+  }
+}
